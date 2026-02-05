@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+}
+.parallax p{
+        color: black;
+        font-size: 20px;
+    }
+.capitano1 {
+    background-image: url('https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/01/08/44749939/26c59302d4875ea30625d3a6668b6475_8903995631587657681.png?x-oss-process=image%2Fformat%2Cwebp');
+}
+.capitano2{
+    background-image: url('https://i.ytimg.com/vi/MmBt4eoTw_A/maxresdefault.jpg');
+}
+.box {
+    padding: 100px;
+    text-align: center;
+    background-color: black;
+    color: rgb(150, 206, 255);
+}
+.text1{
+    color: rgb(28, 134, 234);
+}
+.text2{
+    color: rgb(150, 206, 255);
+}
+h1 {
+    font-size: 50px;
+}
