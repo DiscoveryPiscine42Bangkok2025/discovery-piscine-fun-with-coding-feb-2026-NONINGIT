@@ -1,0 +1,23 @@
+html, body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: x-large;
+    background-color: deepskyblue;
+}
+
+.drop {
+    font-size: 50px;
+    text-align: center;
+}
+
+select {
+    border-radius: 50%;
+    background-color: bisque;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+}
