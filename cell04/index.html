@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery Piscine [Rush Project]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+<body class="home-bg">
+    <div class="container vh-100 d-flex align-items-center justify-content-center">
+        <div class="glass-container text-center p-5 shadow-lg">
+            <h1 class="ml2 text-white fw-bold mb-3">Discovery Piscine [Rush Project]</h1>
+            <p class="text-white-50 mb-5">Please select a pisciner</p>
+            
+            <div class="d-flex flex-column flex-sm-row gap-4 justify-content-center">
+                <a href="Portfolio_Fluke.html" class="btn-glass">Chairoj Tansin</a>
+                <a href="kchaitee.html" class="btn-glass">Krittimaporn Chaiteerayanon</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var textWrapper = document.querySelector('.ml2');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+          .add({
+            targets: '.ml2 .letter',
+            scale: [4,1],
+            opacity: [0,1],
+            translateZ: 0,
+            easing: "easeOutExposed",
+            duration: 950,
+            delay: (el, i) => 70 * i
+          }).add({
+            targets: '.ml2',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExposed",
+            delay: 3000
+          });
+    </script>
+</body>
+</html>
